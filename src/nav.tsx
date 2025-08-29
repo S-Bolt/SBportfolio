@@ -35,7 +35,7 @@ export default function NavBar() {
             About
           </a>
           <a href="#tech" className="text-white hover:text-gray-300 transition">
-            Skills
+            Tech Tools
           </a>
           <a
             href="#projects"

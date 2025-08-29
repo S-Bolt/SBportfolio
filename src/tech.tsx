@@ -40,7 +40,7 @@ export default function Tech() {
       {/*Image and Badges */}
       <div className="flex flex-col md:flex-row">
         <div className="m-4 md:w-1/2">
-          <div className="h-72 mr-8">
+          <div className="h-72 md:mr-8">
             <img
               key={active.name}
               src={active.src}

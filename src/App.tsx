@@ -4,6 +4,7 @@ import NavBar from "./nav";
 import Tech from "./tech";
 import Texture from "./assets/concrete-wall-2.png";
 import { motion } from "motion/react";
+import Projects from "./projects";
 
 function App() {
   return (
@@ -32,8 +33,11 @@ function App() {
         />
         <About />
       </section>
-      <section className="pb-16">
+      <section className="pb-16" id="tech">
         <Tech />
+      </section>
+      <section className="pb-16" id="projects">
+        <Projects />
       </section>
     </main>
   );
