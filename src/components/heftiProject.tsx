@@ -2,7 +2,13 @@ import heftiImage from "../assets/heftiImage2.png";
 import { Badge } from "../components/ui/badge";
 import { Button } from "../components/ui/button";
 
-const heftiTech = ["React", "Tailwind Css", "Storybook", "Vite"];
+const heftiTech = [
+  "React",
+  "Tailwind Css",
+  "Tailwind UI Kit",
+  "Storybook",
+  "Vite",
+];
 
 export default function HeftiProject() {
   return (
@@ -12,7 +18,7 @@ export default function HeftiProject() {
         <img
           src={heftiImage}
           alt="Hefti Website Landing Page"
-          className="object-contain w-full h-full "
+          className="object-contain w-full h-full border-2 border-black"
         />
       </div>
 
@@ -66,7 +72,7 @@ export default function HeftiProject() {
       </div>
 
       {/*Tech Used */}
-      <div className="flex items-center justify-center gap-8 mt-2">
+      <div className="flex flex-wrap items-center justify-center gap-2 mt-2">
         {heftiTech.map((item) => (
           <Badge variant="outline" key={item}>
             {item}

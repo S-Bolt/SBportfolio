@@ -31,7 +31,7 @@ export default function Tech() {
     <div className="bg-white py-16">
       {/*Top Portion Text */}
       <div className="mx-4 mb-12">
-        <h3 className="text-2xl text-bold pb-4">Tools I Use</h3>
+        <h3 className="text-2xl text-bold pb-4">Tech and Tools </h3>
         <p className="text-4xl md:max-w-3/4 lg:max-w-2/3">
           These are the tools and technologies I use to build responsive,
           accessible, and modern web experiences.
@@ -55,7 +55,7 @@ export default function Tech() {
               key={item.name}
               variant="outline"
               onMouseEnter={() => setActive(item)}
-              className="text-4xl border-gray-200 border-2 rounded-xl text-gray-500 hover:text-black hover:bg-gray-200 mx-1"
+              className="text-4xl border-gray-200 border-2 rounded-xl text-gray-500 hover:text-black hover:bg-gray-200 mx-1 whitespace-normal break-words"
             >
               {item.name}
             </Badge>
