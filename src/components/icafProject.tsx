@@ -1,8 +1,9 @@
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import icafVideo from "../assets/ICAF - Google Chrome 2025-08-29 18-32-54.mp4";
 import icafImage from "../assets/icafImage.png";
 
+const YT_ID = "u9vZMf0W2G0"; // from your youtu.be link
+const YT_EMBED = `https://www.youtube.com/embed/${YT_ID}`;
 const icafTech = ["React", "TypeScipt", "Tailwind Css", "Shadcn", "Vite"];
 
 export default function IcafProject() {
@@ -10,15 +11,15 @@ export default function IcafProject() {
     <>
       {/*Image */}
       <div className="mx-4 h-full py-4">
-        <video
-          controls
-          preload="metadata"
-          className="object-contain w-full h-full border-2 border-black"
-          poster={icafImage}
-        >
-          <source src={icafVideo} type="video/mp4" />
-          Sorry, your browser doesn’t support embedded videos.
-        </video>
+        <div className="aspect-video w-full overflow-hidden rounded-2xl border">
+          <iframe
+            className="h-full w-full"
+            src={`${YT_EMBED}?rel=0`}
+            title="ICAF Demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
       </div>
 
       {/*Text */}
