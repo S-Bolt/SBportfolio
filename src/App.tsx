@@ -2,6 +2,7 @@ import About from "./about";
 import Hero from "./hero";
 import NavBar from "./nav";
 import Tech from "./tech";
+import Contact from "./contact";
 import Texture from "./assets/concrete-wall-2.png";
 import { motion } from "motion/react";
 import Projects from "./projects";
@@ -38,6 +39,9 @@ function App() {
       </section>
       <section className="pb-16" id="projects">
         <Projects />
+      </section>
+      <section className="pb-16" id="contact">
+        <Contact />
       </section>
     </main>
   );

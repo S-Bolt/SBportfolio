@@ -1,8 +1,7 @@
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import icafImage from "../assets/icafImage.png";
 
-const YT_ID = "u9vZMf0W2G0"; // from your youtu.be link
+const YT_ID = "u9vZMf0W2G0";
 const YT_EMBED = `https://www.youtube.com/embed/${YT_ID}`;
 const icafTech = ["React", "TypeScipt", "Tailwind Css", "Shadcn", "Vite"];
 

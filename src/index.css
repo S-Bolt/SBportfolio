@@ -160,3 +160,29 @@ body,
 .animate-colorPulse {
   animation: colorPulse 8s ease-in-out infinite;
 }
+
+/* faint grid overlay */
+.bg-grid {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.09) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+  background-size: 64px 64px, 64px 64px; /* grid size */
+}
+
+/* aurora-ish radial gradients */
+.bg-aurora {
+  background: radial-gradient(
+      800px 800px at 15% 10%,
+      rgba(124, 58, 237, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 900px at 90% 85%,
+      rgba(34, 211, 238, 0.18),
+      transparent 55%
+    ),
+    #00000078;
+}
