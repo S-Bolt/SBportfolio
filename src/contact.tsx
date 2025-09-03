@@ -2,12 +2,12 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="relative min-h-screen text-white ">
+    <div className="relative  min-h-screen text-white ">
       <div className="absolute inset-0 bg-aurora">
         <div className="pointer-events-none absolute inset-0 bg-grid opacity-20" />
-
+        {/* 
         {/* Watermark */}
-        <div className="pointer-events-none absolute left-1 -bottom-2 select-none text-7xl sm:text-9xl md:text-[10rem] lg:text-[14rem] xl:text-[16rem] font-black leading-none tracking-tight text-white/5  ">
+        <div className="pointer-events-none absolute left-1 bottom-5 select-none text-7xl sm:text-9xl md:text-[10rem] lg:text-[14rem] xl:text-[16rem] font-black leading-none tracking-tight text-white/5  ">
           Contact.
         </div>
 

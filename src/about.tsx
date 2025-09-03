@@ -30,7 +30,12 @@ export default function About() {
   };
 
   return (
-    <div className="relative h-full">
+    <div className="relative h-full  md:h-screen py-32 px-6 ">
+      <div className="pointer-events-none absolute inset-0 bg-grid opacity-20" />
+      {/* Watermark */}
+      <div className="pointer-events-none absolute left-1 -bottom-2 select-none text-7xl sm:text-9xl md:text-[10rem] lg:text-[14rem] xl:text-[16rem] font-black leading-none tracking-tight text-white/5  ">
+        About.
+      </div>
       <div className="flex flex-col md:flex-row md:items-start relative">
         <div className="md:w-1/2 z-10">
           <AccordionAbout />

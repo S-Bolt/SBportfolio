@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import SbLogo from "./assets/sbLogo";
+import { Menu, X } from "lucide-react";
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +29,7 @@ export default function NavBar() {
         </div>
 
         {/* Links */}
-        <div className="flex items-center gap-6">
+        <div className="hidden  sm:flex items-center gap-6">
           <a
             href="#about"
             className="text-white hover:text-gray-300 transition"
@@ -50,7 +52,51 @@ export default function NavBar() {
             Contact
           </a>
         </div>
+
+        {/*Mobile Links */}
+        <div className="sm:hidden ">
+          <button
+            className="sm:hidden inline-flex p-2 text-white"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label="Toggle menu"
+          >
+            {open ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
+
+      {open && (
+        <div id="mobile-menu" className="sm:hidden">
+          <div className="flex flex-col gap-3 mx-6 h-36">
+            <a
+              href="#about"
+              className="text-white hover:text-gray-300 transition"
+            >
+              About
+            </a>
+            <a
+              href="#tech"
+              className="text-white hover:text-gray-300 transition"
+            >
+              Tech Tools
+            </a>
+            <a
+              href="#projects"
+              className="text-white hover:text-gray-300 transition"
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              className="text-white hover:text-gray-300 transition"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
