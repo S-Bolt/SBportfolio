@@ -1,20 +1,29 @@
+import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
+
 export default function Hero() {
   return (
     <>
-      <div className="flex justify-start h-screen items-center relative overflow-hidden ">
+      <div className="relative h-screen overflow-hidden isolate ">
+        <BackgroundGradientAnimation
+          interactive
+          containerClassName="absolute inset-0 z-0 h-full w-full "
+          gradientBackgroundStart="rgb(2, 6, 23)"
+          gradientBackgroundEnd="rgb(0, 0, 0)"
+        />
         {/* code wallpaper */}
-        <CodeBackdrop />
+        <div className="absolute inset-0 z-10 ">
+          <CodeBackdrop />
+        </div>
 
-        <div className="flex items-start  overflow-hidden w-full mx-6">
-          <div className="flex items-center ">
-            <div className="flex flex-col">
-              <p className="text-8xl font-extrabold sm:text-9xl  text-white/50 text-shadow-2xs overflow-hidden">
-                Sam Bolton
-              </p>
-              <p className="text-6xl sm:text-4xl font-semibold text-white/50 text-shadow-2xs overflow-hidden">
-                Front-End Developer
-              </p>
-            </div>
+        {/* Foreground content */}
+        <div className="relative z-20 flex h-full items-center px-6">
+          <div>
+            <p className="text-8xl sm:text-9xl font-extrabold text-white">
+              Sam Bolton
+            </p>
+            <p className="text-4xl sm:text-6xl font-semibold text-white/80">
+              Front-End Developer
+            </p>
           </div>
         </div>
       </div>
@@ -23,24 +32,26 @@ export default function Hero() {
 }
 
 // CodeBackdrop.tsx
-const snippet = `// tools I use
-import React from "react";
+const snippet = `
+export default function NavBar() {
+  const [scrolled, setScrolled] = useState(false);
 
-type Project = {
-  id: string;
-  title: string;
-  tech: string[];
-};
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-export function useDebounce<T>(value: T, delay = 250) {
-  const [v, setV] = React.useState(value);
-  React.useEffect(() => {
-    const t = setTimeout(() => setV(value), delay);
-    return () => clearTimeout(t);
-  }, [value, delay]);
-  return v;
-}
-
+  return (
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            {scrolled && <SbLogo className="h-10 w-10" />}
+  
+            <span className="text-white font-bold text-xl">Sam Bolton</span>
+          </div>
 // todo: ship something great today
 `;
 
@@ -55,11 +66,9 @@ function CodeBackdrop() {
         className={[
           "absolute rotate-[-0deg]",
           "whitespace-pre leading-tight tracking-tight",
-          "min-w-[120%] text-[30px] sm:text-[13px] md:text-[30px]",
-          "blur-[0.3px]", // tiny blur -> looks printed, not crisp UI text
-          "text-violet-600/20",
-          // soft edge fade so it doesn't overpower
-          "[mask-image:radial-gradient(70%_70%_at_40%_35%,#000_60%,transparent_100%)]",
+          "min-w-[120%] text-[30px] md:text-[30px] xl:text-[40px]",
+          "blur-[0.3px]",
+          "text-gray-400/5",
         ].join(" ")}
       >
         {snippet}

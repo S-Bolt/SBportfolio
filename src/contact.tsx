@@ -2,7 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="relative min-h-screen text-white">
+    <div className="relative min-h-screen text-white ">
       <div className="absolute inset-0 bg-aurora">
         <div className="pointer-events-none absolute inset-0 bg-grid opacity-20" />
 
@@ -24,12 +24,12 @@ export default function Contact() {
             >
               sambolton.kw@gmail.com
             </a>
-            <p className="my-4">
-              Call or text me at{" "}
-              <span className="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:decoration-white">
-                703-801-8364
-              </span>
-            </p>
+          </p>
+          <p className="my-4 text-white/80">
+            Call or text me at{" "}
+            <span className="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:decoration-white">
+              703-801-8364
+            </span>
           </p>
 
           {/* Social row */}

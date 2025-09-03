@@ -133,32 +133,56 @@ body,
   }
 }
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
+.animate-first {
+  animation: moveVertical 30s ease-in-out infinite;
+}
+.animate-second {
+  animation: moveInCircle 20s reverse infinite;
+}
+.animate-third {
+  animation: moveInCircle 40s linear infinite;
+}
+.animate-fourth {
+  animation: moveHorizontal 40s ease infinite;
+}
+.animate-fifth {
+  animation: moveInCircle 20s ease infinite;
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
   }
   50% {
-    transform: translateY(-50px);
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
   }
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes colorPulse {
-  0%,
-  100% {
-    background-color: oklch(0.63 0.26 29.23);
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
   }
   50% {
-    background-color: #3c0a0a;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-.animate-colorPulse {
-  animation: colorPulse 8s ease-in-out infinite;
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
 }
 
 /* faint grid overlay */
@@ -176,12 +200,12 @@ body,
 .bg-aurora {
   background: radial-gradient(
       800px 800px at 15% 10%,
-      rgba(124, 58, 237, 0.18),
+      rgba(248, 54, 54, 0.283),
       transparent 60%
     ),
     radial-gradient(
       900px 900px at 90% 85%,
-      rgba(34, 211, 238, 0.18),
+      rgba(235, 34, 238, 0.18),
       transparent 55%
     ),
     #00000078;
