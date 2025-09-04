@@ -1,4 +1,4 @@
-import heftiImage from "../assets/heftiImage2.png";
+import heftiImage from "../assets/heftiImage2.webp";
 import { Badge } from "../components/ui/badge";
 import { Button } from "../components/ui/button";
 

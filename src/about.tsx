@@ -1,4 +1,4 @@
-import AvatarPic from "./assets/avatar.png";
+import AvatarPic from "./assets/avatar.webp";
 
 import { useState } from "react";
 
