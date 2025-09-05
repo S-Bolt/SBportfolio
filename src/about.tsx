@@ -141,7 +141,7 @@ export function AvatarAbout() {
   return (
     <div className="flex  items-center gap-12">
       <Avatar className="h-64 w-64 z-40">
-        <AvatarImage src={AvatarPic} alt="@Sam Bolton" />
+        <AvatarImage src={AvatarPic} loading="lazy" alt="@Sam Bolton" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
     </div>

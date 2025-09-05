@@ -40,11 +40,12 @@ export default function Tech() {
       {/*Image and Badges */}
       <div className="flex flex-col md:flex-row">
         <div className="m-4 md:w-1/2">
-          <div className="h-72 md:mr-8">
+          <div className="h-72 md:mr-8 aspect-[16/9]">
             <img
               key={active.name}
               src={active.src}
               alt={`${active.name} preview`}
+              loading="lazy"
               className="object-cover w-full h-full"
             />
           </div>

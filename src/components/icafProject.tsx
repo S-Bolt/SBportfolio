@@ -14,7 +14,8 @@ export default function IcafProject() {
           <iframe
             className="h-full w-full"
             src={`${YT_EMBED}?rel=0`}
-            title="ICAF Demo"
+            title="ICAF Walkthrough"
+            loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           />

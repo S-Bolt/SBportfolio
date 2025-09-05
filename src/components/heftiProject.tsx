@@ -17,6 +17,7 @@ export default function HeftiProject() {
       <div className="mx-4 h-full py-4  ">
         <img
           src={heftiImage}
+          loading="lazy"
           alt="Hefti Website Landing Page"
           className="object-contain w-full h-full border-2 border-black"
         />
