@@ -1,25 +1,20 @@
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
-const YT_ID = "u9vZMf0W2G0";
-const YT_EMBED = `https://www.youtube.com/embed/${YT_ID}`;
+import icafImage from "../assets/icafImage.webp";
 const icafTech = ["React", "TypeScipt", "Tailwind Css", "Shadcn", "Vite"];
 
 export default function IcafProject() {
   return (
     <>
       {/*Image */}
-      <div className="mx-4 h-full py-4">
-        <div className="aspect-video w-full overflow-hidden rounded-2xl border">
-          <iframe
-            className="h-full w-full"
-            src={`${YT_EMBED}?rel=0`}
-            title="ICAF Walkthrough"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-        </div>
+      <div className="mx-4 h-full py-4  ">
+        <img
+          src={icafImage}
+          loading="lazy"
+          alt="Hefti Website Landing Page"
+          className="object-contain w-full h-full border-2 border-black"
+        />
       </div>
 
       {/*Text */}
@@ -45,8 +40,8 @@ export default function IcafProject() {
           <div>
             <p className="pb-4">
               I was a front-end contributor. I built the responsive navigation
-              system (desktop dropdowns + mobile menu), the About page, and the
-              site footer.
+              system (desktop dropdowns + mobile menu), the About page, the
+              World Children's Festival page and the site footer.
             </p>
             <p className="pb-4">
               Each section was uniquely designed rather than templatized, so I
@@ -75,11 +70,11 @@ export default function IcafProject() {
           className="border-black text-xl font-light"
         >
           <a
-          // href="http://hefti-app.s3-website.us-east-2.amazonaws.com/"
-          // target="_blank"
-          // rel="noopener noreferrer"
+            href="https://revise.icaf.org/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Not Yet Deployed
+            View Website
           </a>
         </Button>
       </div>
