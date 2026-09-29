@@ -69,11 +69,7 @@ export default function IcafProject() {
           size="viewWebsiteSize"
           className="border-black text-xl font-light"
         >
-          <a
-            href="https://revise.icaf.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://icaf.org/" target="_blank" rel="noopener noreferrer">
             View Website
           </a>
         </Button>
