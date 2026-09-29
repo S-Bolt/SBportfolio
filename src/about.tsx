@@ -119,14 +119,21 @@ export function AccordionAbout() {
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger className="text-4xl">
-          Why I Love Frontend
+          How I Build Software
         </AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
-          <p>Have you ever talked to a backend dev before? Just kidding!</p>
           <p>
-            Frontend lets me exercise both my logical and creative sides. I get
-            a thrill out of crafting user experiences that don’t just work, but
-            look and feel incredible.
+            I enjoy turning ideas into useful, reliable software. My strongest
+            experience is building polished web interfaces, but I also like
+            working through the broader problems behind them—from understanding
+            requirements and shaping data flows to integrating APIs, debugging
+            issues, and shipping features.
+          </p>
+          <p>
+            I care about writing maintainable code, communicating clearly, and
+            making thoughtful tradeoffs. My goal is not just to make something
+            look good, but to build software that works well for the people
+            using it and the teams maintaining it.
           </p>
         </AccordionContent>
       </AccordionItem>
