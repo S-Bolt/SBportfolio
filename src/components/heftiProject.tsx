@@ -89,7 +89,7 @@ export default function HeftiProject() {
           className="border-black text-xl font-light"
         >
           <a
-            href="http://hefti-app.s3-website.us-east-2.amazonaws.com/"
+            href="http://heftiresearch.com"
             target="_blank"
             rel="noopener noreferrer"
           >
