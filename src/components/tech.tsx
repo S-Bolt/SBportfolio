@@ -1,15 +1,15 @@
 import { useState } from "react";
-import reactImage from "./assets/react.webp";
-import nextImage from "./assets/next.webp";
-import tailwindImage from "./assets/tailwind.webp";
-import typesriptImage from "./assets/typescript.webp";
-import nodeImage from "./assets/node.webp";
-import viteImage from "./assets/vite.webp";
-import javascriptImage from "./assets/javascript.webp";
-import storybookImage from "./assets/storybook.webp";
-import reduxImage from "./assets/redux.webp";
-import figmaImage from "./assets/figma.webp";
-import { Badge } from "./components/ui/badge";
+import reactImage from "../assets/react.webp";
+import nextImage from "../assets/next.webp";
+import tailwindImage from "../assets/tailwind.webp";
+import typesriptImage from "../assets/typescript.webp";
+import nodeImage from "../assets/node.webp";
+import viteImage from "../assets/vite.webp";
+import javascriptImage from "../assets/javascript.webp";
+import storybookImage from "../assets/storybook.webp";
+import reduxImage from "../assets/redux.webp";
+import figmaImage from "../assets/figma.webp";
+import { Badge } from "./ui/badge";
 
 const tech = [
   { name: "Javascript", src: javascriptImage },

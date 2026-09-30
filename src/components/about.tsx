@@ -1,4 +1,4 @@
-import AvatarPic from "./assets/avatar.webp";
+import AvatarPic from "../assets/avatar.webp";
 
 import { useState } from "react";
 
@@ -70,7 +70,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "./components/ui/accordion";
+} from "./ui/accordion";
 
 export function AccordionAbout() {
   return (
@@ -141,8 +141,8 @@ export function AccordionAbout() {
   );
 }
 
-import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
-import { MessageBubble } from "./components/ui/messageBubble";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { MessageBubble } from "./ui/messageBubble";
 
 export function AvatarAbout() {
   return (

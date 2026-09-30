@@ -1,6 +1,6 @@
-import HeftiProject from "./components/heftiProject";
-import IcafProject from "./components/icafProject";
-import { Badge } from "./components/ui/badge";
+import HeftiProject from "./heftiProject";
+import IcafProject from "./icafProject";
+import { Badge } from "./ui/badge";
 
 export default function Projects() {
   return (

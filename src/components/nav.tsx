@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import SbLogo from "./assets/sbLogo";
+import SbLogo from "../assets/sbLogo";
 import { Menu, X } from "lucide-react";
 
 export default function NavBar() {

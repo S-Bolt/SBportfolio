@@ -1,4 +1,4 @@
-import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
+import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 
 export default function Hero() {
   return (
