@@ -22,7 +22,7 @@ export default function Hero() {
               Sam Bolton
             </p>
             <p className="text-4xl sm:text-6xl font-semibold text-white/80">
-              Product-Minded Software Engineer
+              Product-Minded Software Developer
             </p>
           </div>
         </div>

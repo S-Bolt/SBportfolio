@@ -60,7 +60,7 @@ export default function HeftiProject() {
               cases.
             </p>
             <p className="pb-4">
-              Coordinated with back-end engineer to shape endpoints and wire the
+              Coordinated with a back-end developer to shape endpoints and wire the
               UI to live data.
             </p>
             <p className="pb-4">
